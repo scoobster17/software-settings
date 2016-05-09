@@ -1,0 +1,22 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"tab_size": 4,
+	"theme": "SoDaReloaded Dark.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}

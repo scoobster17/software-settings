@@ -1,0 +1,4 @@
+[
+	{ "keys": ["shift+super+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["ctrl+shift+r"], "command": "reveal_in_side_bar"}
+]
