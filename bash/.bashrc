@@ -5,6 +5,8 @@
 # Changes require the following command to be run unless the terminal is closed
 # source ~/.bash_profile
 
+echo "Reloading .bashrc"
+
 ################################################################################
 
 # $PATH
