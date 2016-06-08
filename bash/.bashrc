@@ -1,6 +1,6 @@
 ################################################################################
 
-### BASH PROFILE ###
+### BASH RC ###
 
 # Changes require the following command to be run unless the terminal is closed
 # source ~/.bash_profile
@@ -69,18 +69,18 @@ export LSCOLORS=GxFxCxDxBxegedabagaced  # Default once colours activated
 
 # ALIASES
 
-# TERMINAL SHORTCUTS
+# TRAVERSING
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
 
+# SHORTCUTS
+alias rb="source ~/.bash_profile"		# Reload bash profile
+
 # EXAMPLE OF ALIAS WITH PARAMETER
 # in below example 'goto ~' is the same as 'cd ~'
 # goto () { cd "$1"; }
-
-# ALIASES
-# alias something="cd ~/something/sub/folder"
 
 ################################################################################
