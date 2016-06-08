@@ -19,7 +19,7 @@ export PATH=~/bin:$PATH
 # SET DEFAULT EDITOR
 # relies on https://www.sublimetext.com/docs/2/osx_command_line.html
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-export EDITOR=/bin/subl
+export EDITOR=~/bin/subl
 
 ################################################################################
 
