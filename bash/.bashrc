@@ -2,21 +2,21 @@
 
 ### BASH RC ###
 
-# Changes require the following command to be run unless the terminal is closed
-# source ~/.bash_profile
+# Changes require the following command to be run unless the terminal is closed:
+# "source ~/.bash_profile" or "rb" using alias below
 
 echo "Reloading .bashrc"
 
 ################################################################################
 
-# $PATH
+## $PATH
 
 # SET PATHS
 export PATH=~/bin:$PATH
 
 ################################################################################
 
-# DEFAULT SETTINGS
+## DEFAULT SETTINGS
 
 # SET DEFAULT EDITOR
 # relies on https://www.sublimetext.com/docs/2/osx_command_line.html
@@ -25,7 +25,7 @@ export EDITOR=~/bin/subl
 
 ################################################################################
 
-# COLOURS
+## COLOURS
 
 # CHANGE THE DEFAULT COLOUR OF PROMPT TO GREEN (AND CHANGES FORMAT)
 # http://www.marinamele.com/2014/05/customize-colors-of-your-terminal-in-mac-os-x.html
@@ -65,11 +65,11 @@ export CLICOLOR=1
 #	x default color
 #
 # export LSCOLORS=exfxcxdxbxegedabagacad  # Default once colours activated
-export LSCOLORS=GxFxCxDxBxegedabagaced  # Default once colours activated
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 ################################################################################
 
-# ALIASES
+## ALIASES
 
 # TRAVERSING
 alias ..="cd ../"
@@ -81,8 +81,11 @@ alias ......="cd ../../../../../"
 # SHORTCUTS
 alias rb="source ~/.bash_profile"		# Reload bash profile
 
-# EXAMPLE OF ALIAS WITH PARAMETER
-# in below example 'goto ~' is the same as 'cd ~'
-# goto () { cd "$1"; }
+################################################################################
+
+## FUNCTIONS
+
+# SHORTCUTS
+cl () { cd "$1"; ls -a; }				# Navigate to a directory and list contents
 
 ################################################################################
