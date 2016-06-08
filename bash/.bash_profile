@@ -29,8 +29,8 @@ export EDITOR=/bin/subl
 # http://www.marinamele.com/2014/05/customize-colors-of-your-terminal-in-mac-os-x.html
 # \e[0m indicates format text reset
 #PS1='[\u@\h \W]\$ '  # Default with format (\u @ \h \W); user@host path
-#PS1='\[\e[1;31m\][\u@\h \W]\$\[\e[0m\] '  # RED (\e[1;31m)
-PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '   # GREEN (\e[1;32m)
+#PS1='\[\e[1;31m\][\u@\h \W]\$\[\e[0m\] '  		# RED (\e[1;31m)
+PS1='\n\[\e[1;32m\]\u ../\W/ \$\[\e[0m\] '    	# GREEN (\e[1;32m)
 
 # ACTIVATE COLOURS IN TERMINAL
 export CLICOLOR=1
