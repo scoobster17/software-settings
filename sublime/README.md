@@ -1,5 +1,8 @@
+Sublime Text
+============
+
 Packages
-========
+--------
 
 Packages I choose to install in Sublime:
 
