@@ -23,6 +23,18 @@ export PATH=~/bin:$PATH
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 export EDITOR=~/bin/subl
 
+# SAVE BASH HISTORY FOR ALL TERMINALS IN REAL TIME
+# http://web.archive.org/web/20090815205011/http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
+# Tells bash to append to the history instead of completely overwriting
+shopt -s histappend
+# calls history -a every time the prompt is shown, appending the last command to
+# the history file
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+# allow the bash history file size to be changed to keep a certain amount of history
+# To make unlimited, just =, no value
+HISTSIZE=10000
+HISTFILESIZE=10000
+
 ################################################################################
 
 ## COLOURS
@@ -80,6 +92,7 @@ alias ......="cd ../../../../../"
 
 # SHORTCUTS
 alias rb="source ~/.bash_profile"		# Reload bash profile
+alias gnm="npm ls -g --depth 0"			# List npm modules installed globally
 
 ################################################################################
 
