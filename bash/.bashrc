@@ -81,6 +81,12 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 ################################################################################
 
+# VARIABLES
+
+MYEDITOR="subl" 						# Symlink to my editor
+
+################################################################################
+
 ## ALIASES
 
 # TRAVERSING
@@ -92,6 +98,9 @@ alias ......="cd ../../../../../"
 
 # SHORTCUTS
 alias rb="source ~/.bash_profile"		# Reload bash profile
+alias obp=$MYEDITOR" ~/.bash_profile"	# Open .bash_profile
+alias obr=$MYEDITOR" ~/.bashrc"			# Open .bashrc
+alias obh=$MYEDITOR" ~/.bash_history"	# Open bash history
 alias gnm="npm ls -g --depth 0"			# List npm modules installed globally
 
 ################################################################################
