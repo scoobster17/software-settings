@@ -13,6 +13,7 @@ Packages I choose to install in Sublime:
 -	FuzzyFilePath
 -	GenericConfig
 -	GitGutter
+-	HostsEdit
 -	LESS
 -	Markdown Preview
 -	Material Theme
