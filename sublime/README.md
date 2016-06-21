@@ -7,9 +7,11 @@ Packages
 Packages I choose to install in Sublime:
 
 -	All Autocomplete
+- 	Babel
 -	ColorPicker
 -	DocBlockr
 -	FuzzyFilePath
+-	GenericConfig
 -	GitGutter
 -	LESS
 -	Markdown Preview

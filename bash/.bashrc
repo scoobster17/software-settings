@@ -21,7 +21,7 @@ export PATH=~/bin:$PATH
 # SET DEFAULT EDITOR
 # relies on https://www.sublimetext.com/docs/2/osx_command_line.html
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-export EDITOR=~/bin/subl
+# export EDITOR=~/bin/subl
 
 # SAVE BASH HISTORY FOR ALL TERMINALS IN REAL TIME
 # http://web.archive.org/web/20090815205011/http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
