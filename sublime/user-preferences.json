@@ -33,6 +33,7 @@
 //	"fold_buttons": true,
 //	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".sass-cache", "tmp"],
 // 	"font_face": "Input Mono",
+// 	"font_options": "subpixel_antialias",
 // 	"font_size": 16.0,
 //	"gutter": true,
 	"highlight_line": true,
@@ -84,6 +85,7 @@
 	"trim_trailing_white_space_on_save": true,
 //	"use_simple_full_screen": false,
 //	"use_tab_stops": true,
+//	"vintage_start_in_command_mode": true,
 // 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?_",
 	"word_wrap": false
 // 	"wrap_width": 100
