@@ -5,9 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
 		"Babel",
+		"BracketHighlighter",
 		"ColorPicker",
 		"CSS Color Converter",
 		"DocBlockr",
@@ -15,13 +17,16 @@
 		"Generic Config",
 		"GitGutter",
 		"HostsEdit",
+		"HTML-CSS-JS Prettify",
 		"LESS",
 		"LiveStyle",
 		"Markdown Preview",
 		"Material Theme",
+		"Minifier",
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
+		"Super Calculator",
 		"Terminal",
 		"Theme - SoDaReloaded"
 	]
