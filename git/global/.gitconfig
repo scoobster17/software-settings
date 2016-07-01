@@ -1,0 +1,6 @@
+## GIT CONFIG
+# To be stored in / added to .gitconfig in user's home directory (~)
+
+# git config --global alias.st "status"
+[alias]
+	st = status
