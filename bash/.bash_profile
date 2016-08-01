@@ -1,6 +1,6 @@
 ### BASH PROFILE ###
 
-echo "Reloading .bash_profile"
+echo -e "\nReloading .bash_profile"
 
 # ACCESS SETTINGS IN BASH RC FILE
 if [ -f ~/.bashrc ]; then
