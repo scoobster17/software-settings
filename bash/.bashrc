@@ -84,7 +84,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # http://stackoverflow.com/questions/394230/detect-the-os-from-a-bash-script
 case "$OSTYPE" in
     msys*)      OS="WINDOWS" ;;         # Windows 10 only?
-    darwin*)    OS="OSX" ;; 
+    darwin*)    OS="MAC" ;;
     linux*)     OS="LINUX" ;;
     bsd*)       OS="BSD" ;;
     *)          OS="UNKNOWN: $OSTYPE" ;;
@@ -200,6 +200,19 @@ echo "set Git alias st for status"
 
 # SHORTCUTS
 cl () { cd "$1"; ls -a; }               # Navigate to a directory and list contents
+ip () {
+    case "$OS" in
+        WINDOWS)
+            ipconfig
+            ;;
+        MAC)
+            ifconfig | grep "inet " |  grep -v 127.0.0.1
+            ;;
+        *)
+            echo "OS NOT RECOGNISED"
+            ;;
+    esac
+}
 
 ################################################################################
 
