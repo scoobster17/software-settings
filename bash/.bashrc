@@ -159,13 +159,14 @@ echo -e "Projects directory set to "$PROJECTS_DIR"\nUse the 'pro' alias to cd to
 ##### BASH ALIASES #############################################################
 ################################################################################
 
-#-- TRAVERSING --#
+#-- TRAVERSING & FILE/FOLDER OPERATIONS --#
 
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
+alias la="ls -la"
 
 #-- BASH --#
 
