@@ -40,7 +40,8 @@ HISTFILESIZE=10000
 # \e[0m indicates format text reset
 #PS1='[\u@\h \W]\$ '  # Default with format (\u @ \h \W); user@host path
 #PS1='\[\e[1;31m\][\u@\h \W]\$\[\e[0m\] '       # RED (\e[1;31m)
-PS1='\n\[\e[1;32m\]\u ../\W/ \$\[\e[0m\] '      # GREEN (\e[1;32m)
+PS1='\n\[\e[1;32m\]Dir: .../\W/  User: \u  Last Cmd: \t\n\$\[\e[0m\] '      # GREEN (\e[1;32m)
+# TO BE IMPROVED WITH PROMPT_COMMAND AND/OR PREEXEC http://superuser.com/questions/175799/does-bash-have-a-hook-that-is-run-before-executing-a-command
 
 # ACTIVATE COLOURS IN TERMINAL
 export CLICOLOR=1
