@@ -183,6 +183,13 @@ alias clb="cp ~/.bashrc $PROJECTS_DIR/$REPO_NAME/bash/.bashrc"
 
 #-- NPM --#
 alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
+alias gnp="gnm"
+alias npmgm="gnm"
+alias npmgp="gnm"
+
+#-- BREW --#
+alias bp="brew list"                    # List packages installed with brew
+alias bm="bp"
 
 #-- PROJECTS --#
 alias pro="cd "$PROJECTS_DIR" && ls -la" # Set path to projects
