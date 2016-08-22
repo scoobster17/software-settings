@@ -1,3 +1,4 @@
 ## GIT IGNORE ##
 
-*.sublime*
+*.sublime-project
+*.sublime-workspace
