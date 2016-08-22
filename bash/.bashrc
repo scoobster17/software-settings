@@ -207,8 +207,13 @@ echo "set Git alias st for status"
 
 ## FUNCTIONS
 
-# SHORTCUTS
+# FILE / FOLDER OPERATIONS
 cl () { cd "$1"; ls -a; }               # Navigate to a directory and list contents
+mat () { mkdir "$1"; cd "$1"; }         # Make directory specified and traverse to it
+cao () { touch "$1"; open "$1"; }       # create file and open it
+cae () { touch "$1"; $MYEDITOR "$1"; }  # create file and open for editing
+
+# GET IP ADDRESS REGARDLESS OF OS
 ip () {
     case "$OS" in
         WINDOWS)
