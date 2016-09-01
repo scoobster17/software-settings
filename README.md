@@ -47,6 +47,7 @@ Programs to add:
 - WAMP
 - Virtualbox
 - VeraCrypt
+    - OSXFuse
 
 Brew
 - mongodb
@@ -66,3 +67,4 @@ Npm -g
 - protractor
 - serve
 - webpack
+- webpack-dev-server
