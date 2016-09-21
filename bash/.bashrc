@@ -237,7 +237,7 @@ ip () {
 # bash reload. may just need to be chained for one declaration?
 
 # SET PATH
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/.npm-packages/bin:$PATH
 export PATH="$EDITOR_DIR":$PATH
 
 ################################################################################
