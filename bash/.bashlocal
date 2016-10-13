@@ -14,5 +14,6 @@ echo -e "Reloading .bashlocal"
 
 ## LOCAL SETTINGS
 
-PROJECTS_DIR="/path/to/projects/"       # Path to locally stored projects. To be
-                                        # changed when copied to local machine
+PROJECTS_DIR="/path/to/dir" # Path to locally stored projects.
+                            # To be changed when copied to local
+echo "Projects directory set to \""$PROJECTS_DIR"\""

@@ -136,7 +136,7 @@ EDITOR_SYM_LINK_NAME="subl"         # Symlink destination folder name
 # Symlink destination
 EDITOR_SYM_LINK_DEST="$HOME/$USER_BIN/$EDITOR_SYM_LINK_NAME"
 
-MYEDITOR=EDITOR_SYM_LINK_NAME           # Symlink alias to my editor
+MYEDITOR=$EDITOR_SYM_LINK_NAME           # Symlink alias to my editor
 
 ################################################################################
 ##### SYMBOLIC LINKS
