@@ -3,5 +3,5 @@
 
 # git config --global alias.st "status"
 [alias]
-	st = status
+    st = status
     cm = commit

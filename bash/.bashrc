@@ -137,9 +137,6 @@ EDITOR_SYM_LINK_NAME="subl"         # Symlink destination folder name
 EDITOR_SYM_LINK_DEST="$HOME/$USER_BIN/$EDITOR_SYM_LINK_NAME"
 
 MYEDITOR=EDITOR_SYM_LINK_NAME           # Symlink alias to my editor
-PROJECTS_DIR="/path/to/projects/"       # Path to locally stored projects. To be
-                                        # changed when copied to local machine
-echo -e "Projects directory set to "$PROJECTS_DIR"\nUse the 'pro' alias to cd to projects directory.\n"
 
 ################################################################################
 ##### SYMBOLIC LINKS
@@ -174,13 +171,13 @@ alias la="ls -la"
 alias rb="source ~/.bash_profile"       # Reload bash profile
 alias obp=$MYEDITOR" ~/.bash_profile"   # Open .bash_profile
 alias obr=$MYEDITOR" ~/.bashrc"         # Open .bashrc
+alias obl=$MYEDITOR" ~/.bashlocal"      # Open .bashlocal
 alias obh=$MYEDITOR" ~/.bash_history"   # Open bash history
 
-# copy bash in repo to local machine
-alias crb="cd $PROJECTS_DIR/ && cp bash/.bashrc ~"
-
-# copy bash stored locally to repo
-alias clb="cp ~/.bashrc $PROJECTS_DIR/$REPO_NAME/bash/.bashrc"
+if [ -n PROJECTS_DIR ]; then
+    alias cbp="echo \"copying repo/.../.bash_profile\" && cp "$PROJECTS_DIR"/"$REPO_NAME"/bash/.bash_profile ~ && rb"   # copy repo .bash_profile
+    alias cbr="echo \"copying repo/.../.bashrc\" && cp "$PROJECTS_DIR"/"$REPO_NAME"/bash/.bashrc ~ && rb"               # copy repo .bashrc
+fi
 
 #-- NPM --#
 alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
@@ -188,20 +185,23 @@ alias gnp="gnm"
 alias npmgm="gnm"
 alias npmgp="gnm"
 
-#-- BREW --#
-alias bp="brew list"                    # List packages installed with brew
-alias bm="bp"
-
 #-- PROJECTS --#
-alias pro="cd "$PROJECTS_DIR" && ls -la" # Set path to projects
-alias spp="PROJECTS_DIR=\""$1\"" && rb"  # Set projects destination path
+if [ -n PROJECTS_DIR ]; then
+    alias pro="cd "$PROJECTS_DIR" && la" # Go to projects
+fi
 
-################################################################################
-
-## GIT ALIASES
-
-git config --global alias.st status
-echo "set Git alias st for status"
+# SET OS SPECIFIC ALIASES
+case "$OS" in
+    WINDOWS)
+        ;;
+    MAC)
+        #-- BREW --#
+        alias bp="brew list"                    # List packages installed with brew
+        alias bm="bp"
+        ;;
+    *)
+        ;;
+esac
 
 ################################################################################
 
