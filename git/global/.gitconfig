@@ -1,7 +1,20 @@
+
 ## GIT CONFIG
 # To be stored in / added to .gitconfig in user's home directory (~)
 
+# equivalent of
+# git config --global user.name "Phil Gibbins"
+[user]
+    name = Phil Gibbins
+    email = scoobster17@hotmail.co.uk
+
+# equivalent of
 # git config --global alias.st "status"
 [alias]
     st = status
     cm = commit
+
+# equivalent of
+# git config --global credential.helper 'store --file ~/.git-credentials'
+[credential]
+    helper = store --file ~/.git-credentials
