@@ -34,7 +34,7 @@
 //	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".sass-cache", "tmp"],
 // 	"font_face": "Input Mono",
 // 	"font_options": "subpixel_antialias",
-// 	"font_size": 16.0,
+ 	"font_size": 14.0,
 //	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
