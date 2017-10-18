@@ -11,8 +11,10 @@
 # equivalent of
 # git config --global alias.st "status"
 [alias]
-    st = status
+	br = branch
+    ch = checkout
     cm = commit
+    st = status
 
 # equivalent of
 # git config --global credential.helper 'store --file ~/.git-credentials'
