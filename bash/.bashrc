@@ -184,6 +184,11 @@ alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
 alias gnp="gnm"
 alias npmgm="gnm"
 alias npmgp="gnm"
+alias rnm="rm -rf ./node_modules/"      # Remove node modules
+alias dnm="rnm"
+
+#-- SOFTWARE --#
+alias ws="webstorm"                     # shortcut for webstorm (/usr/local/bin/webstorm)
 
 #-- PROJECTS --#
 if [ -n PROJECTS_DIR ]; then
