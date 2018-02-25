@@ -17,3 +17,12 @@ echo -e "Reloading .bashlocal"
 PROJECTS_DIR="/path/to/dir" # Path to locally stored projects.
                             # To be changed when copied to local
 echo "Projects directory set to \""$PROJECTS_DIR"\""
+
+
+# NVM
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
+
+
+# Google Cloud
+# source /Users/philg/Documents/tools/google-cloud-sdk/path.bash.inc
