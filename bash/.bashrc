@@ -179,6 +179,8 @@ if [ -n PROJECTS_DIR ]; then
     alias cbr="echo \"copying repo/.../.bashrc\" && cp "$PROJECTS_DIR"/"$REPO_NAME"/bash/.bashrc ~ && rb"               # copy repo .bashrc
 fi
 
+alias set_fish_as_shell="chsh -s /usr/local/bin/fish"
+
 #-- NPM --#
 alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
 alias gnp="gnm"
