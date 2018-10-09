@@ -17,9 +17,10 @@ alias rnm="rm -rf ./node_modules/"
 
 # Git
 alias gs="git st"
+alias ug="git clone https://github.com/git/git" # Update Git to latest development version
 
 # Webstorm
-alias ws="webstorm"
+alias ws="webstorm" # Webstorm found in /usr/local/bin
 
 # Sublime
 alias subl="$HOME/bin/subl"
