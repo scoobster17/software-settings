@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 echo "Setting up variables for .zshrc"
 export PROJECTS_DIR=$HOME"/Documents/projects/work"
 echo "Projects directory set to: "$PROJECTS_DIR
-export EDITOR="subl"        # temporary
+# export EDITOR="~/bin/subl"        # breaks git rebase for example, should use vi
 
 # ZSH PLUGINS
 echo "Setting up plugins"
@@ -120,10 +120,11 @@ source $(brew --prefix nvm)/nvm.sh
 echo "Setting custom aliases"
 alias subl="~/bin/subl"
 alias rz="source ~/.zshrc"
-alias pro="cd $PROJECTS_DIR && la"
+alias pro="cd $PROJECTS_DIR"
 alias ozr="$EDITOR ~/.zshrc"
 alias rnm="rm -rf ./node_modules"
 alias ong="subl ~/.ngrok2/ngrok.yml"
+alias ongi="open http://127.0.0.1:4040/inspect/http"
 alias onx="subl /usr/local/etc/nginx/nginx.conf"
 alias obp="subl ~/.bash_profile"
 alias obr="subl ~/.bashrc"
@@ -137,6 +138,11 @@ oke () {
   sleep 3 && open http://localhost:8800 &
   bin/kube editor
 }
+
+ont () {
+  open -a iTerm .
+}
+
 
 ip () {
     case "$OS" in
@@ -160,6 +166,7 @@ sha () {
   echo "  'ozr' - Open .zshrc configuration file"
   echo "  'rnm' - Remove node_modules folder in the current directory (rm -rf)"
   echo "  'ong' - Open ngrok configuration file"
+  echo "  'ongi' - Open ngrok inspect page in browser"
   echo "  'onx' - Open nginx configuration file"
 
   echo "\nAvailable custom functions:\n-------------------------\n"
