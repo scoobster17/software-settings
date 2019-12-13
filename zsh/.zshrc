@@ -106,29 +106,10 @@ echo "Setting up plugins"
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Google Cloud
-echo "Setting up Google Cloud SDK"
-[[ ":$PATH:" != *":$HOME/Documents/tools/google-cloud-sdk/bin:"* ]] && PATH="$HOME/Documents/tools/google-cloud-sdk/bin:${PATH}" # only adds to path if not there already
-
-# NVM - This section is apparently not needed when nvm listed in plugins, but doesn't work for me yet
-echo "Setting up NVM"
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 
 # CUSTOM ALIASES
-echo "Setting custom aliases"
 alias subl="~/bin/subl"
-alias rz="source ~/.zshrc"
-alias pro="cd $PROJECTS_DIR"
-alias ozr="$EDITOR ~/.zshrc"
-alias rnm="rm -rf ./node_modules"
-alias ong="subl ~/.ngrok2/ngrok.yml"
-alias ongi="open http://127.0.0.1:4040/inspect/http"
-alias onx="subl /usr/local/etc/nginx/nginx.conf"
-alias obp="subl ~/.bash_profile"
-alias obr="subl ~/.bashrc"
-alias obl="subl ~/.bashlocal"
 
 # CUSTOM FUNCTIONS
 echo "Setting up custom functions"
@@ -137,25 +118,6 @@ oke () {
   cd backend/tools
   sleep 3 && open http://localhost:8800 &
   bin/kube editor
-}
-
-ont () {
-  open -a iTerm .
-}
-
-
-ip () {
-    case "$OS" in
-        WINDOWS)
-            ipconfig
-            ;;
-        MAC)
-            ifconfig | grep "inet " |  grep -v 127.0.0.1
-            ;;
-        *)
-            echo "OS NOT RECOGNISED"
-            ;;
-    esac
 }
 
 sha () {

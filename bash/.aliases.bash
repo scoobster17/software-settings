@@ -1,0 +1,53 @@
+#!/bin/bash
+
+echo "Setting custom aliases"
+
+#-- PROJECTS --#
+if [ -n PROJECTS_DIR ]; then
+    alias pro="cd "$PROJECTS_DIR # Go to projects
+fi
+
+#-- TRAVERSING & FILE/FOLDER OPERATIONS --#
+#alias ..="cd ../"
+#alias ...="cd ../../"
+alias la="ls -la"
+
+#-- SHELL SWITCHING --#
+alias use-bash="chsh -s /bin/bash"
+alias use-fish="chsh -s /usr/local/bin/fish"
+alias use-zsh="chsh -s /bin/zsh"
+
+#-- BASH --#
+alias rb="source ~/.bash_profile"       # Reload bash profile
+alias obp=$MYEDITOR" ~/.bash_profile"   # Open .bash_profile
+alias obr=$MYEDITOR" ~/.bashrc"         # Open .bashrc
+alias oba=$MYEDITOR" ~/.aliases.bash"   # Open bash aliases
+alias obl=$MYEDITOR" ~/.bashlocal"      # Open .bashlocal
+alias obh=$MYEDITOR" ~/.bash_history"   # Open bash history
+
+#-- FISH --#
+alias rf="source ~/.config/fish/config.fish"
+alias ofc="subl ~/.config/fish/config.fish"
+alias ofh="subl ~/.local/share/fish/fish_history"
+
+#-- ZSH --#
+alias rz="source ~/.zshrc"
+alias ozr="$EDITOR ~/.zshrc"
+
+#-- NPM --#
+alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
+alias gnp="gnm"
+alias npmgm="gnm"
+alias npmgp="gnm"
+alias rnm="rm -rf ./node_modules/"      # Remove node modules
+alias dnm="rnm"
+
+#-- EDITOR --#
+alias ws="webstorm"                     # shortcut for webstorm (/usr/local/bin/webstorm)
+
+#-- NGROK --#
+alias ong="subl ~/.ngrok2/ngrok.yml"
+alias ongi="open http://127.0.0.1:4040/inspect/http"
+
+#-- NGINX --#
+alias onx="subl /usr/local/etc/nginx/nginx.conf"

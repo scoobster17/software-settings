@@ -157,83 +157,17 @@ MYEDITOR=$EDITOR_SYM_LINK_NAME           # Symlink alias to my editor
 ##### BASH ALIASES #############################################################
 ################################################################################
 
-#-- TRAVERSING & FILE/FOLDER OPERATIONS --#
-
-alias ..="cd ../"
-alias ...="cd ../../"
-alias ....="cd ../../../"
-alias .....="cd ../../../../"
-alias ......="cd ../../../../../"
-alias la="ls -la"
-
-#-- BASH --#
-
-alias rb="source ~/.bash_profile"       # Reload bash profile
-alias obp=$MYEDITOR" ~/.bash_profile"   # Open .bash_profile
-alias obr=$MYEDITOR" ~/.bashrc"         # Open .bashrc
-alias obl=$MYEDITOR" ~/.bashlocal"      # Open .bashlocal
-alias obh=$MYEDITOR" ~/.bash_history"   # Open bash history
-
-if [ -n PROJECTS_DIR ]; then
-    alias cbp="echo \"copying repo/.../.bash_profile\" && cp "$PROJECTS_DIR"/"$REPO_NAME"/bash/.bash_profile ~ && rb"   # copy repo .bash_profile
-    alias cbr="echo \"copying repo/.../.bashrc\" && cp "$PROJECTS_DIR"/"$REPO_NAME"/bash/.bashrc ~ && rb"               # copy repo .bashrc
+if [ -f ./.aliases.bash ]; then
+    source ./.aliases.bash
 fi
-
-alias set_fish_as_shell="chsh -s /usr/local/bin/fish"
-
-#-- NPM --#
-alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
-alias gnp="gnm"
-alias npmgm="gnm"
-alias npmgp="gnm"
-alias rnm="rm -rf ./node_modules/"      # Remove node modules
-alias dnm="rnm"
-
-#-- SOFTWARE --#
-alias ws="webstorm"                     # shortcut for webstorm (/usr/local/bin/webstorm)
-
-#-- PROJECTS --#
-if [ -n PROJECTS_DIR ]; then
-    alias pro="cd "$PROJECTS_DIR" && la" # Go to projects
-fi
-
-# SET OS SPECIFIC ALIASES
-case "$OS" in
-    WINDOWS)
-        ;;
-    MAC)
-        #-- BREW --#
-        alias bp="brew list"                    # List packages installed with brew
-        alias bm="bp"
-        ;;
-    *)
-        ;;
-esac
 
 ################################################################################
+##### FUNCTIONS ################################################################
+################################################################################
 
-## FUNCTIONS
-
-# FILE / FOLDER OPERATIONS
-cl () { cd "$1"; ls -a; }               # Navigate to a directory and list contents
-mat () { mkdir "$1"; cd "$1"; }         # Make directory specified and traverse to it
-cao () { touch "$1"; open "$1"; }       # create file and open it
-cae () { touch "$1"; $MYEDITOR "$1"; }  # create file and open for editing
-
-# GET IP ADDRESS REGARDLESS OF OS
-ip () {
-    case "$OS" in
-        WINDOWS)
-            ipconfig
-            ;;
-        MAC)
-            ifconfig | grep "inet " |  grep -v 127.0.0.1
-            ;;
-        *)
-            echo "OS NOT RECOGNISED"
-            ;;
-    esac
-}
+if [ -f ./.functions.bash ]; then
+    source ./.functions.bash
+fi
 
 ################################################################################
 
