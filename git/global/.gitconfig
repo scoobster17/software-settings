@@ -6,7 +6,7 @@
 # git config --global user.name "Phil Gibbins"
 [user]
     name = Phil Gibbins
-    email = scoobster17@hotmail.co.uk
+    email = phil@splyt.com
 
 # equivalent of
 # git config --global alias.st "status"
@@ -15,8 +15,9 @@
     ch = checkout
     cm = commit
     st = status
+    cpk = cherry-pick
 
 # equivalent of
 # git config --global credential.helper 'store --file ~/.git-credentials'
-[credential]
-    helper = store --file ~/.git-credentials
+# [credential]
+#     helper = store --file ~/.git-credentials

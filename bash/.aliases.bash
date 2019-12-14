@@ -3,7 +3,7 @@
 echo "Setting custom aliases"
 
 #-- PROJECTS --#
-if [ -n PROJECTS_DIR ]; then
+if [ -n $PROJECTS_DIR ]; then
     alias pro="cd "$PROJECTS_DIR # Go to projects
 fi
 
@@ -27,8 +27,8 @@ alias obh=$MYEDITOR" ~/.bash_history"   # Open bash history
 
 #-- FISH --#
 alias rf="source ~/.config/fish/config.fish"
-alias ofc="subl ~/.config/fish/config.fish"
-alias ofh="subl ~/.local/share/fish/fish_history"
+alias ofc=$MYEDITOR" ~/.config/fish/config.fish"
+alias ofh=$MYEDITOR" ~/.local/share/fish/fish_history"
 
 #-- ZSH --#
 alias rz="source ~/.zshrc"
@@ -43,11 +43,12 @@ alias rnm="rm -rf ./node_modules/"      # Remove node modules
 alias dnm="rnm"
 
 #-- EDITOR --#
+alias subl="~/bin/subl"
 alias ws="webstorm"                     # shortcut for webstorm (/usr/local/bin/webstorm)
 
 #-- NGROK --#
-alias ong="subl ~/.ngrok2/ngrok.yml"
+alias ong=$MYEDITOR" ~/.ngrok2/ngrok.yml"
 alias ongi="open http://127.0.0.1:4040/inspect/http"
 
 #-- NGINX --#
-alias onx="subl /usr/local/etc/nginx/nginx.conf"
+alias onx=$MYEDITOR" /usr/local/etc/nginx/nginx.conf"

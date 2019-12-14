@@ -1,3 +1,5 @@
+echo "Setting up custom functions"
+
 #-- NETWORK --#
 ip () {
   case "$OS" in
@@ -19,7 +21,15 @@ mat () { mkdir "$1"; cd "$1"; }         # Make directory specified and traverse 
 cao () { touch "$1"; open "$1"; }       # create file and open it
 cae () { touch "$1"; $MYEDITOR "$1"; }  # create file and open for editing
 
-#--  --#
+#-- ALIAS-LIKE --#
 oit () {
   open -a iTerm .
+}
+
+#-- WORK --#
+oke () {
+  cd $PROJECTS_DIR
+  cd backend/tools
+  sleep 3 && open http://localhost:8800 &
+  bin/kube editor
 }

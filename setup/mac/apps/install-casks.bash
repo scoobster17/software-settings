@@ -20,9 +20,12 @@ brew cask install drawio
 # brew cask install figma
 brew cask install firefox
 brew cask install google-chrome
+brew cask install google-cloud-sdk
 brew cask install iterm2
 brew cask install little-snitch
 brew cask install messenger
+brew cask install microsoft-excel
+brew cask install microsoft-word
 brew cask install omnidisksweeper
 brew cask install paw
 brew cask install postman
@@ -38,4 +41,4 @@ brew cask install sublime-text
 # brew cask install visual-studio-code
 brew cask install webstorm
 brew cask install whatsapp
-brew cask install zoom
+brew cask install zoomus

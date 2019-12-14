@@ -11,7 +11,7 @@ export ZSH="/Users/philg/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
@@ -30,8 +30,14 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -99,42 +105,29 @@ source $ZSH/oh-my-zsh.sh
 echo "Setting up variables for .zshrc"
 export PROJECTS_DIR=$HOME"/Documents/projects/work"
 echo "Projects directory set to: "$PROJECTS_DIR
-# export EDITOR="~/bin/subl"        # breaks git rebase for example, should use vi
+# export MYEDITOR="~/bin/subl"        # breaks git rebase for example, should use vi
 
 # ZSH PLUGINS
 echo "Setting up plugins"
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# ALIASES
+ALIASES_PATH=$PROJECTS_DIR"/../personal/software-settings/bash/.aliases.bash"
+if [ -f $ALIASES_PATH ]; then
+    source $ALIASES_PATH
+fi
 
+# FUNCTIONS
+FUNCTIONS_PATH=$PROJECTS_DIR"/../personal/software-settings/bash/.functions.bash"
+if [ -f $FUNCTIONS_PATH ]; then
+    source $FUNCTIONS_PATH
+fi
 
-# CUSTOM ALIASES
-alias subl="~/bin/subl"
-
-# CUSTOM FUNCTIONS
-echo "Setting up custom functions"
-oke () {
-  cd $PROJECTS_DIR
-  cd backend/tools
-  sleep 3 && open http://localhost:8800 &
-  bin/kube editor
-}
-
-sha () {
-  echo "\nAvailable custom aliases:\n-------------------------\n"
-  echo "  'subl' - Open sublime text"
-  echo "  'rz' - Reload zsh(rc)"
-  echo "  'pro' - Change directory to projects directory and list projects"
-  echo "  'ozr' - Open .zshrc configuration file"
-  echo "  'rnm' - Remove node_modules folder in the current directory (rm -rf)"
-  echo "  'ong' - Open ngrok configuration file"
-  echo "  'ongi' - Open ngrok inspect page in browser"
-  echo "  'onx' - Open nginx configuration file"
-
-  echo "\nAvailable custom functions:\n-------------------------\n"
-  echo "  'oke' - Open splyt's kubernetes editor (backend/tools)"
-  echo "  'ip' - Reveal ip address"
-  echo "  'sha' - Print available custom aliases/functions for reference"
-}
+# TOOLS, E.G. NVM, GCLOUD
+TOOLS_SETUP_PATH=$PROJECTS_DIR"/../personal/software-settings/bash/.tools-setup.bash"
+if [ -f $TOOLS_SETUP_PATH ]; then
+    source $TOOLS_SETUP_PATH
+fi
 
 echo "\nFinished reloading .zshrc\n"

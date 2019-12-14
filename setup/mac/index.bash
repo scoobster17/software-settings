@@ -8,4 +8,5 @@ source ./machine-configuration.bash
 source $(cd apps; pwd)/install-casks.bash
 
 # Set up apps
+source $(cd apps; pwd)/set-up-zsh.bash
 source $(cd apps; pwd)/set-up-google-chrome.bash
