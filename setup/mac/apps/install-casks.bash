@@ -12,7 +12,7 @@ brew cask install alinof-timer
 brew cask install caffeine
 brew cask install charles
 brew cask install clickup
-brew cask install copyclip
+brew cask install copyq
 # brew cask install db-browser-for-sqlite
 brew cask install docker
 brew cask install drawio
