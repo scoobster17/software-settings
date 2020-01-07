@@ -27,6 +27,7 @@ brew cask install little-snitch
 brew cask install messenger
 brew cask install microsoft-excel
 brew cask install microsoft-word
+brew cask install ngrok
 brew cask install omnidisksweeper
 brew cask install paw
 brew cask install postman
