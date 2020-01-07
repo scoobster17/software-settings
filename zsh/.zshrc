@@ -107,7 +107,6 @@ source $ZSH/oh-my-zsh.sh
 echo "Setting up variables for .zshrc"
 export PROJECTS_DIR=$HOME"/Documents/projects/work"
 echo "Projects directory set to: "$PROJECTS_DIR
-# export MYEDITOR="~/bin/subl"        # breaks git rebase for example, should use vi
 
 # ZSH PLUGINS
 echo "Setting up plugins"

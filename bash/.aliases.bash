@@ -17,6 +17,11 @@ alias use-bash="chsh -s /bin/bash"
 alias use-fish="chsh -s /usr/local/bin/fish"
 alias use-zsh="chsh -s /bin/zsh"
 
+#-- EDITOR --#
+alias subl="~/bin/subl"
+alias ws="webstorm"                     # shortcut for webstorm (/usr/local/bin/webstorm)
+export MYEDITOR="subl"
+
 #-- BASH --#
 alias rb="source ~/.bash_profile"       # Reload bash profile
 alias obp=$MYEDITOR" ~/.bash_profile"   # Open .bash_profile
@@ -41,10 +46,6 @@ alias npmgm="gnm"
 alias npmgp="gnm"
 alias rnm="rm -rf ./node_modules/"      # Remove node modules
 alias dnm="rnm"
-
-#-- EDITOR --#
-alias subl="~/bin/subl"
-alias ws="webstorm"                     # shortcut for webstorm (/usr/local/bin/webstorm)
 
 #-- NGROK --#
 alias ong=$MYEDITOR" ~/.ngrok2/ngrok.yml"
