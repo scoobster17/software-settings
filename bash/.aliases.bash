@@ -32,7 +32,7 @@ alias ofh=$MYEDITOR" ~/.local/share/fish/fish_history"
 
 #-- ZSH --#
 alias rz="source ~/.zshrc"
-alias ozr="$EDITOR ~/.zshrc"
+alias ozr=$MYEDITOR" ~/.zshrc"
 
 #-- NPM --#
 alias gnm="npm ls -g --depth 0"         # List npm modules installed globally

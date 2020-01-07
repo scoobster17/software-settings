@@ -9,6 +9,7 @@ brew cask install avast-security
 brew cask install alinof-timer
 # brew cask install android-studio
 # brew cask install angular-console
+brew cask install blackhole # audio driver
 brew cask install caffeine
 brew cask install charles
 brew cask install clickup
