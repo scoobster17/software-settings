@@ -38,6 +38,7 @@ alias ofh=$MYEDITOR" ~/.local/share/fish/fish_history"
 #-- ZSH --#
 alias rz="source ~/.zshrc"
 alias ozr=$MYEDITOR" ~/.zshrc"
+alias ozh=$MYEDITOR" ~/.zsh_history"
 
 #-- NPM --#
 alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
@@ -53,3 +54,6 @@ alias ongi="open http://127.0.0.1:4040/inspect/http"
 
 #-- NGINX --#
 alias onx=$MYEDITOR" /usr/local/etc/nginx/nginx.conf"
+
+#-- GIT --#
+alias gdmb="git branch --merged | grep -v 'master' | xargs git branch -d" # Delete branches merged in origin
