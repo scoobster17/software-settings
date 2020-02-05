@@ -7,6 +7,7 @@ brew install kubernetes-cli
 brew install nginx
 brew install nvm
 brew install python
+ brew install speedtest-cli
 # brew install sqlite
 # brew install tmux
 brew install trash
