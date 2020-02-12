@@ -18,6 +18,8 @@ ln -s $NEW_DOWNLOADS_PATH $CURRENT_DOWNLOADS_PATH
 # Set default programs for certain file extensions
 ###############################################################################
 
+duti -s com.jetbrains.Webstorm ejs all
+
 duti -s com.jetbrains.Webstorm jsx all
 
 duti -s com.jetbrains.Webstorm ts all
