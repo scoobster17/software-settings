@@ -4,6 +4,7 @@ brew install duti
 brew install ffmpeg
 brew install fish
 brew install kubernetes-cli
+brew install mas
 brew install nginx
 brew install nvm
 brew install python
