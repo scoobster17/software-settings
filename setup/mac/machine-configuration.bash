@@ -26,3 +26,5 @@ duti -s com.jetbrains.Webstorm ts all
 duti -s com.jetbrains.Webstorm tsx all
 
 duti -s com.jetbrains.Webstorm yml all
+
+duti -s com.jetbrains.Webstorm scss all
