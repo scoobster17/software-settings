@@ -113,6 +113,11 @@ echo "Setting up plugins"
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# VARIABLES
+# TODO: need a separate file for this
+# for disabling git pager for all commands
+export GIT_PAGER=cat
+
 # ALIASES
 ALIASES_PATH=$PROJECTS_DIR"/../personal/software-settings/bash/.aliases.bash"
 if [ -f $ALIASES_PATH ]; then

@@ -10,6 +10,7 @@ brew install nvm
 brew install python
  brew install speedtest-cli
 # brew install sqlite
+brew install terraform
 # brew install tmux
 brew install trash
 brew install zsh

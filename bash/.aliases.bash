@@ -57,3 +57,6 @@ alias onx=$MYEDITOR" /usr/local/etc/nginx/nginx.conf"
 
 #-- GIT --#
 alias gdmb="git branch --merged | grep -v 'master' | xargs git branch -d" # Delete branches merged in origin
+
+#-- Terraform --#
+alias tf="terraform"

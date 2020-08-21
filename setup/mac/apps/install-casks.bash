@@ -38,6 +38,7 @@ brew cask install spectacle
 brew cask install spotify
 brew cask install studio-3t
 brew cask install sublime-text
+# brew cask install synalyze-it-pro
 # brew cask install toggl
 # brew cask install veracrypt
 # brew cask install visual-studio-code
