@@ -29,14 +29,8 @@ oit () {
 #-- WORK --#
 oke () {
   cd $PROJECTS_DIR
-  cd backend/tools2
-  sleep 3 && open http://localhost:8800 &
-  bin/kube editor
-}
-
-okm () {
-  cd $PROJECTS_DIR
   cd backend/tools
+  git pull --all
   sleep 3 && open http://localhost:8801 &
   bin/kube mce
 }
