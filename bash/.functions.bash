@@ -31,6 +31,8 @@ oke () {
   cd $PROJECTS_DIR
   cd backend/tools
   git pull --all
-  sleep 3 && open http://localhost:8801 &
-  bin/kube mce
+#  sleep 3 && open http://localhost:8801 &
+#  bin/kube mce
+  cd src/kube-mce
+  npm run electron
 }
