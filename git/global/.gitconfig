@@ -15,6 +15,7 @@
     ch = checkout
     cm = commit
     st = status
+    sw = switch
     cpk = cherry-pick
 
 # equivalent of
