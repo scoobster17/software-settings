@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 echo "Setting up variables for .zshrc"
-source $PROJECTS_DIR"/software-settings/setup/mac/set-projects-directory.bash"
+source ~/.set-projects-directory.bash
 
 # ZSH PLUGINS
 echo "Setting up plugins"
