@@ -1,47 +1,46 @@
 #!/bin/bash
 
 ### Anti-virus ##################################
-brew cask install avast-security
-# brew cask install avg-antivirus
-# brew cask install malwarebytes
-# brew cask install avira-antivirus
+# brew install avg-antivirus
+# brew install malwarebytes
+# brew install avira-antivirus
 
-brew cask install alinof-timer
-# brew cask install android-studio
-# brew cask install angular-console
-brew cask install blackhole # audio driver
-brew cask install caffeine
-brew cask install charles
-brew cask install clickup
-brew cask install copyq
-# brew cask install db-browser-for-sqlite
-brew cask install docker
-brew cask install drawio
-# brew cask install expressvpn
-# brew cask install figma
-brew cask install firefox
-brew cask install google-chrome
-brew cask install google-cloud-sdk
-brew cask install iterm2
-brew cask install little-snitch
-brew cask install messenger
-brew cask install microsoft-excel
-brew cask install microsoft-word
-brew cask install ngrok
-brew cask install omnidisksweeper
-brew cask install paw
-brew cask install postman
-brew cask install simplenote
-brew cask install skype
-brew cask install slack
-brew cask install spectacle
-brew cask install spotify
-brew cask install studio-3t
-brew cask install sublime-text
-# brew cask install synalyze-it-pro
-# brew cask install toggl
-# brew cask install veracrypt
-# brew cask install visual-studio-code
-brew cask install webstorm
-brew cask install whatsapp
-brew cask install zoomus
+brew install alinof-timer
+# brew install android-studio
+# brew install angular-console
+#brew install blackhole # audio driver
+brew install caffeine
+brew install charles
+brew install clickup
+brew install copyq
+# brew install db-browser-for-sqlite
+brew install docker
+brew install drawio
+# brew install expressvpn
+# brew install figma
+brew install firefox
+brew install google-chrome
+brew install google-cloud-sdk
+brew install iterm2
+brew install little-snitch
+brew install messenger
+brew install microsoft-excel
+brew install microsoft-word
+brew install ngrok
+brew install omnidisksweeper
+brew install paw
+brew install postman
+brew install simplenote
+brew install skype
+brew install slack
+brew install spectacle
+brew install spotify
+brew install studio-3t
+brew install sublime-text
+# brew install synalyze-it-pro
+# brew install toggl
+# brew install veracrypt
+# brew install visual-studio-code
+brew install webstorm
+brew install whatsapp
+brew install zoomus

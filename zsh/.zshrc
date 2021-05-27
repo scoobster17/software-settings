@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "\n########################"
 echo "### Reloading .zshrc ###"
@@ -105,8 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 echo "Setting up variables for .zshrc"
-export PROJECTS_DIR=$HOME"/Documents/projects/work"
-echo "Projects directory set to: "$PROJECTS_DIR
+source $PROJECTS_DIR"/software-settings/setup/mac/set-projects-directory.bash"
 
 # ZSH PLUGINS
 echo "Setting up plugins"
@@ -119,19 +118,19 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export GIT_PAGER=cat
 
 # ALIASES
-ALIASES_PATH=$PROJECTS_DIR"/../personal/software-settings/bash/.aliases.bash"
+ALIASES_PATH=$PROJECTS_DIR"/software-settings/bash/.aliases.bash"
 if [ -f $ALIASES_PATH ]; then
     source $ALIASES_PATH
 fi
 
 # FUNCTIONS
-FUNCTIONS_PATH=$PROJECTS_DIR"/../personal/software-settings/bash/.functions.bash"
+FUNCTIONS_PATH=$PROJECTS_DIR"/software-settings/bash/.functions.bash"
 if [ -f $FUNCTIONS_PATH ]; then
     source $FUNCTIONS_PATH
 fi
 
 # TOOLS, E.G. NVM, GCLOUD
-TOOLS_SETUP_PATH=$PROJECTS_DIR"/../personal/software-settings/bash/.tools-setup.bash"
+TOOLS_SETUP_PATH=$PROJECTS_DIR"/software-settings/bash/.tools-setup.bash"
 if [ -f $TOOLS_SETUP_PATH ]; then
     source $TOOLS_SETUP_PATH
 fi

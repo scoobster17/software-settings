@@ -16,4 +16,5 @@ source $(cd tools; pwd)/install-mas-apps.bash
 
 # Set up apps
 source $(cd tools; pwd)/set-up-zsh.bash
+source $(cd tools; pwd)/set-up-nvm.bash
 source $(cd apps; pwd)/set-up-google-chrome.bash

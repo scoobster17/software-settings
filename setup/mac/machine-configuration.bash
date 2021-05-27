@@ -9,14 +9,21 @@ CURRENT_DOWNLOADS_PATH=~/Downloads
 NEW_DOWNLOADS_PATH=~/Desktop
 
 # Deleting and creating a symlink means each app doesn't need to be set up individually
-mv $CURRENT_DOWNLOADS_PATH"/*" $NEW_DOWNLOADS_PATH
-sudo rm -rf $CURRENT_DOWNLOADS_PATH
-ln -s $NEW_DOWNLOADS_PATH $CURRENT_DOWNLOADS_PATH
-
+if [ ! -L $CURRENT_DOWNLOADS_PATH ]
+then
+  mv $CURRENT_DOWNLOADS_PATH"/*" $NEW_DOWNLOADS_PATH
+  sudo rm -rf $CURRENT_DOWNLOADS_PATH
+  ln -s $NEW_DOWNLOADS_PATH $CURRENT_DOWNLOADS_PATH
+else
+  echo "~/Downloads symbolic link to ~/Desktop already created"
+fi
 
 ###############################################################################
 # Set default programs for certain file extensions
 ###############################################################################
+
+# install utility
+brew install duti
 
 duti -s com.jetbrains.Webstorm ejs all
 

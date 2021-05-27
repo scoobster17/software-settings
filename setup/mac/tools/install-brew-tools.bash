@@ -1,6 +1,5 @@
 #!/bin/bash
 
-brew install duti
 brew install ffmpeg
 brew install fish
 brew install kubernetes-cli

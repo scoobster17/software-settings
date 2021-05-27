@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo "Setting up custom functions"
 
 #-- NETWORK --#

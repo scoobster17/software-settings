@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Google Cloud
 echo "Setting up Google Cloud SDK"
 [[ ":$PATH:" != *":$HOME/Documents/tools/google-cloud-sdk/bin:"* ]] && PATH="$HOME/Documents/tools/google-cloud-sdk/bin:${PATH}" # only adds to path if not there already
