@@ -12,7 +12,10 @@ source ~/.set-projects-directory.bash
 cd $PROJECTS_DIR
 echo "Navigated to projects directory"
 
-git clone https://github.com/scoobster17/software-settings.git
+source $PROJECTS_DIR"/software-settings/bash/.setup-ssh-key-generation-function.bash"
+gsk github
+
+git clone git@github.com:scoobster17/software-settings.git
 cd software-settings
 echo "Navigated into software-settings repo root"
 

@@ -27,9 +27,7 @@ cae () { touch "$1"; $MYEDITOR "$1"; }  # create file and open for editing
 oit () {
   open -a iTerm .
 }
-gsk () {
-  ssh-keygen -a 100 -t ed25519 -f ~/.ssh/${1:-id}_ed25519
-}
+source "./.setup-ssh-key-generation-function.bash"
 
 #-- WORK --#
 oke () {
