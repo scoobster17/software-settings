@@ -1,10 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-### Anti-virus ##################################
+brew install 1password
 # brew install avg-antivirus
 # brew install malwarebytes
 # brew install avira-antivirus
-
 brew install alinof-timer
 # brew install android-studio
 # brew install angular-console
