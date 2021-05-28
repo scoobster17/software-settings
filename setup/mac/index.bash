@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install brew to download all apps and other tools
 source $(cd tools; pwd)/install-brew.bash
 
