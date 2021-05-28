@@ -12,7 +12,7 @@ source ~/.set-projects-directory.bash
 cd $PROJECTS_DIR
 echo "Navigated to projects directory"
 
-source $PROJECTS_DIR"/software-settings/bash/.setup-ssh-key-generation-function.bash"
+source "../../../bash/.setup-ssh-key-generation-function.bash"
 gsk github
 
 git clone git@github.com:scoobster17/software-settings.git
