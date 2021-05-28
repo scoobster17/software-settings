@@ -6,13 +6,13 @@ curl -Lo $OH_MY_ZSH_PATH https://raw.githubusercontent.com/robbyrussell/oh-my-zs
 sh $OH_MY_ZSH_PATH
 rm $OH_MY_ZSH_PATH
 
-ln -s "$( echo $(pwd) )/set-projects-directory.bash" ~/.set-projects-directory.bash
+ln -s "$( echo $(pwd) )/.set-projects-directory.bash" ~/.set-projects-directory.bash
 source ~/.set-projects-directory.bash
 
 cd $PROJECTS_DIR
 echo "Navigated to projects directory"
 
-source "../../../bash/.setup-ssh-key-generation-function.bash"
+source "$( echo $(pwd) )/../../../bash/.setup-ssh-key-generation-function.bash"
 gsk github
 
 git clone git@github.com:scoobster17/software-settings.git
