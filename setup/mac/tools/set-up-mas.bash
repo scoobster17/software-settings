@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Open 1Password (installed via brew) to obtain MAS password
+open -a 1Password\ 7
+
 # Open mac app store for manual login
 # mas signin scoobster17@hotmail.co.uk
 # Temporary workaround until mas fixed: https://github.com/mas-cli/mas/issues/164
