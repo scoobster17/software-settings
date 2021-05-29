@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Install brew to download all apps and other tools
 source $(cd tools; pwd)/install-brew.bash
@@ -19,4 +19,7 @@ source $(cd tools; pwd)/install-mas-apps.bash
 # Set up apps
 source $(cd tools; pwd)/set-up-zsh.bash
 source $(cd tools; pwd)/set-up-nvm.bash
-source $(cd apps; pwd)/set-up-google-chrome.bash
+source $(cd tools; pwd)/set-up-git.bash
+
+# Instead of `source ~/.zshrc`, so aliases etc are loaded into current terminal session
+exec zsh

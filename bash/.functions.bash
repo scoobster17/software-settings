@@ -27,7 +27,7 @@ cae () { touch "$1"; $MYEDITOR "$1"; }  # create file and open for editing
 oit () {
   open -a iTerm .
 }
-source "./.setup-ssh-key-generation-function.bash"
+source "$(echo $(pwd))/../../bash/.setup-ssh-key-generation-function.bash"
 
 #-- WORK --#
 oke () {

@@ -106,6 +106,8 @@ source $ZSH/oh-my-zsh.sh
 
 echo "Setting up variables for .zshrc"
 source ~/.set-projects-directory.bash
+rm ~/.set-projects-directory.bash # delete file from temp repo and replace with permanent
+ln -s $PROJECTS_DIR"/software-settings/setup/mac/.set-projects-directory.bash" ~/.set-projects-directory.bash
 
 # ZSH PLUGINS
 echo "Setting up plugins"
