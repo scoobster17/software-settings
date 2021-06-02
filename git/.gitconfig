@@ -17,6 +17,9 @@
     sw = switch
     cpk = cherry-pick
 
+[pull]
+    rebase = true
+
 # equivalent of
 # git config --global credential.helper 'store --file ~/.git-credentials'
 # [credential]
