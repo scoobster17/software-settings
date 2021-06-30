@@ -47,6 +47,7 @@ alias npmgm="gnm"
 alias npmgp="gnm"
 alias rnm="rm -rf ./node_modules/"      # Remove node modules
 alias dnm="rnm"
+alias nrd="npm run start:dev"
 
 #-- NGROK --#
 alias ong=$MYEDITOR" ~/.ngrok2/ngrok.yml"
