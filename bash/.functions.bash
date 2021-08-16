@@ -30,8 +30,12 @@ oit () {
 source $PROJECTS_DIR"/software-settings/bash/.setup-ssh-key-generation-function.bash"
 
 #-- WORK --#
+export PATH=$PATH:~/Documents/projects/work/backend/tools/bin
+
+NPM_TOKEN=$(cat ~/.npmrc | sed -e 's+//registry.npmjs.org/:_authToken=++')
+
 oke () {
-  cd $PROJECTS_DIR
+  pro
   cd backend/tools
   git pull --all
 #  sleep 3 && open http://localhost:8801 &
