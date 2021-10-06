@@ -32,14 +32,19 @@ source $PROJECTS_DIR"/software-settings/bash/.setup-ssh-key-generation-function.
 #-- WORK --#
 export PATH=$PATH:~/Documents/projects/work/backend/tools/bin
 
-NPM_TOKEN=$(cat ~/.npmrc | sed -e 's+//registry.npmjs.org/:_authToken=++')
+export SPLYT_NPM_TOKEN=$(cat ~/.npmrc | sed -e 's+//registry.npmjs.org/:_authToken=++')
 
 oke () {
   pro
   cd backend/tools
   git pull --all
-#  sleep 3 && open http://localhost:8801 &
-#  bin/kube mce
   cd src/kube-mce
   npm run electron
+}
+
+okm () {
+  pro
+  cd backend/tools
+  git pull --all
+  open -a ~/Applications/Chrome\ Apps.localized/Kube\ MCE.app & bin/kube mce
 }

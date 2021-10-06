@@ -59,7 +59,7 @@ alias ongi="open http://127.0.0.1:4040/inspect/http"
 alias onx=$MYEDITOR" /usr/local/etc/nginx/nginx.conf"
 
 #-- GIT --#
-alias gdmb="git branch --merged | grep -v 'master' | xargs git branch -d" # Delete branches merged in origin
+alias gdmb="git branch --merged | grep -v 'master' | grep -v 'main' | grep -v 'develop' | xargs git branch -d" # Delete branches merged in origin
 
 #-- Terraform --#
 alias tf="terraform"
