@@ -111,8 +111,10 @@ ln -s $PROJECTS_DIR"/software-settings/setup/mac/.set-projects-directory.bash" ~
 
 # ZSH PLUGINS
 echo "Setting up plugins"
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # VARIABLES
 # TODO: need a separate file for this
