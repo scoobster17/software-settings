@@ -27,12 +27,15 @@ cae () { touch "$1"; $MYEDITOR "$1"; }  # create file and open for editing
 oit () {
   open -a iTerm .
 }
-source $PROJECTS_DIR"/software-settings/bash/.setup-ssh-key-generation-function.bash"
+source $PROJECTS_DIR"/personal/software-settings/bash/.setup-ssh-key-generation-function.bash"
 
 #-- WORK --#
 export PATH=$PATH:~/Documents/projects/work/backend/tools/bin
 
-export SPLYT_NPM_TOKEN=$(cat ~/.npmrc | sed -e 's+//registry.npmjs.org/:_authToken=++')
+if [ ! -f ~/.npmrc ]; then
+    touch ~/.npmrc
+fi
+export NPM_TOKEN=$(cat ~/.npmrc | sed -e 's+//registry.npmjs.org/:_authToken=++')
 
 oke () {
   pro

@@ -105,16 +105,29 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 echo "Setting up variables for .zshrc"
-source ~/.set-projects-directory.bash
-rm ~/.set-projects-directory.bash # delete file from temp repo and replace with permanent
-ln -s $PROJECTS_DIR"/software-settings/setup/mac/.set-projects-directory.bash" ~/.set-projects-directory.bash
+
+source "$(greadlink -m ~/.zshrc | xargs dirname)/../setup/mac/fetch-configurations/configure-projects-directory.sh"
 
 # ZSH PLUGINS
 echo "Setting up plugins"
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+ORIGINAL_ZSH_PLUGINS_SETUP_LOCATION="/usr/local/share"
+NEW_ZSH_PLUGINS_SETUP_LOCATION="/opt/homebrew/share"
+ZSH_AUTO_SUGGESTIONS_SETUP_SCRIPT="zsh-autosuggestions/zsh-autosuggestions.zsh"
+ZSH_SYNTAX_HIGHLIGHTING_SETUP_SCRIPT="zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+if [ -f "${ORIGINAL_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_AUTO_SUGGESTIONS_SETUP_SCRIPT}" ]; then
+    source "${ORIGINAL_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_AUTO_SUGGESTIONS_SETUP_SCRIPT}"
+fi
+if [ -f "${ORIGINAL_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_SYNTAX_HIGHLIGHTING_SETUP_SCRIPT}" ]; then
+    source "${ORIGINAL_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_SYNTAX_HIGHLIGHTING_SETUP_SCRIPT}"
+fi
+if [ -f "${NEW_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_AUTO_SUGGESTIONS_SETUP_SCRIPT}" ]; then
+    source "${NEW_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_AUTO_SUGGESTIONS_SETUP_SCRIPT}"
+fi
+if [ -f "${NEW_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_SYNTAX_HIGHLIGHTING_SETUP_SCRIPT}" ]; then
+    source "${NEW_ZSH_PLUGINS_SETUP_LOCATION}/${ZSH_SYNTAX_HIGHLIGHTING_SETUP_SCRIPT}"
+fi
 
 # VARIABLES
 # TODO: need a separate file for this
@@ -122,19 +135,19 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export GIT_PAGER=cat
 
 # ALIASES
-ALIASES_PATH=$PROJECTS_DIR"/software-settings/bash/.aliases.bash"
+ALIASES_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.aliases.bash"
 if [ -f $ALIASES_PATH ]; then
     source $ALIASES_PATH
 fi
 
 # FUNCTIONS
-FUNCTIONS_PATH=$PROJECTS_DIR"/software-settings/bash/.functions.bash"
+FUNCTIONS_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.functions.bash"
 if [ -f $FUNCTIONS_PATH ]; then
     source $FUNCTIONS_PATH
 fi
 
 # TOOLS, E.G. NVM, GCLOUD
-TOOLS_SETUP_PATH=$PROJECTS_DIR"/software-settings/bash/.tools-setup.bash"
+TOOLS_SETUP_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.tools-setup.bash"
 if [ -f $TOOLS_SETUP_PATH ]; then
     source $TOOLS_SETUP_PATH
 fi
