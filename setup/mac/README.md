@@ -4,16 +4,16 @@
 ```
 curl \
   -L -o \
-    ~/Desktop/software-settings-master.zip \
-    https://github.com/scoobster17/software-settings/archive/master.zip \
-  && unzip ~/Desktop/software-settings-master.zip -d ~/Desktop \
-  && rm ~/Desktop/software-settings-master.zip
+    ~/Desktop/software-settings-main.zip \
+    https://github.com/scoobster17/software-settings/archive/main.zip \
+  && unzip ~/Desktop/software-settings-main.zip -d ~/Desktop \
+  && rm ~/Desktop/software-settings-main.zip
 ```
 
 ## Running Setup Scripts
 ```
 DIR=$(pwd) \
-  && cd ~/Desktop/software-settings-master/setup/mac \
+  && cd ~/Desktop/software-settings-main/setup/mac \
   && bash ./index.sh \
   && cd $DIR
 ```
