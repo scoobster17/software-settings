@@ -15,6 +15,7 @@ is_brew_app_installed zsh-syntax-highlighting || brew install zsh-syntax-highlig
 
 # "mandatory" apps
 is_brew_app_installed 1password || brew install 1password;
+is_brew_app_installed coreutils || brew install coreutils; # for greadlink in .zshrc
 is_brew_app_installed docker --cask || brew install --cask docker;
 is_brew_app_installed google-chrome || brew install google-chrome;
 is_brew_app_installed iterm2 || brew install iterm2;
