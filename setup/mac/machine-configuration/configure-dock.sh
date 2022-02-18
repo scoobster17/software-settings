@@ -54,3 +54,8 @@ add_dock_app "1Password 7"
 
 # not using add_dock_app here because of flags
 dockutil --add /Applications --view grid --display folder --sort name --before "Downloads"
+
+# disable default bottom-right corner notes
+defaults write com.apple.dock "wvous-br-corner" 1 \
+  && defaults write com.apple.dock "wvous-br-modifier" 0 \
+  && killall Dock
