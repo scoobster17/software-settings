@@ -78,6 +78,7 @@ read -p "Opened Mac App Store, please manually log in and then hit any key here 
 # mas apps TODO: optional install like brew apps above
 mas search "as timer" | grep '  AS Timer ' | awk '{print $1}' | xargs mas install
 mas search boop | grep '  Boop ' | awk '{print $1}' | xargs mas install
+mas search clockify | grep '  Clockify ' | awk '{print $1}' | xargs mas install
 mas search copyclip | grep '  CopyClip ' | awk '{print $1}' | xargs mas install
 mas search trello | grep '  Trello ' | awk '{print $1}' | xargs mas install
 
