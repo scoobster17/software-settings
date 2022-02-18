@@ -21,5 +21,5 @@ fi
 if mysides list | grep -q "Bin ->"; then
   echo "Bin is already in the finder favourites"
 else
-  mysides add Bin "file:///Users/$USER/Bin"
+  mysides add Bin "file:///Users/$USER/.Trash"
 fi
