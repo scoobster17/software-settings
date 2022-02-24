@@ -147,9 +147,12 @@ if [ -f $FUNCTIONS_PATH ]; then
 fi
 
 # TOOLS, E.G. NVM, GCLOUD
-TOOLS_SETUP_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.tools-setup.bash"
-if [ -f $TOOLS_SETUP_PATH ]; then
-    source $TOOLS_SETUP_PATH
+TOOLS_SETUP_DIR_PATH=$PROJECTS_DIR"/personal/software-settings/bash/tools-setup"
+if [ -f "${TOOLS_SETUP_DIR_PATH}/.google-cloud-sdk.bash" ]; then
+    source "${TOOLS_SETUP_DIR_PATH}/.google-cloud-sdk.bash"
+fi
+if [ -f "${TOOLS_SETUP_DIR_PATH}/.nvm.bash" ]; then
+    source "${TOOLS_SETUP_DIR_PATH}/.nvm.bash"
 fi
 
 echo "\nFinished (re)loading .zshrc\n"

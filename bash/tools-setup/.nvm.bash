@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Setting up NVM"
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
