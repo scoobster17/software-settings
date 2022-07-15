@@ -4,8 +4,7 @@ echo "Setting custom aliases"
 
 #-- PROJECTS --#
 if [ -n $PROJECTS_DIR ]; then
-    alias pro="cd "$PROJECTS_DIR"/../work"
-    alias pro2="cd "$PROJECTS_DIR # Go to projects
+    alias pro="cd ${PROJECTS_DIR}"
 fi
 
 
