@@ -24,3 +24,5 @@
 # git config --global credential.helper 'store --file ~/.git-credentials'
 # [credential]
 #     helper = store --file ~/.git-credentials
+[push]
+	autoSetupRemote = true
