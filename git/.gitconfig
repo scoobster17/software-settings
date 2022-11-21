@@ -5,7 +5,7 @@
 # git config --global user.name "Phil Gibbins"
 [user]
     name = Phil Gibbins
-	email = scoobster17@hotmail.co.uk
+	email = phil@splyt.com
 
 # equivalent of
 # git config --global alias.st "status"

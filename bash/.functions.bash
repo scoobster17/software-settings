@@ -41,15 +41,35 @@ export NPM_TOKEN=$(cat ~/.npmrc | sed -e 's+//registry.npmjs.org/:_authToken=++'
 
 oke () {
   pro
-  cd backend/tools
+  cd work/backend/tools
   git pull --all
   cd src/kube-mce
   npm run electron
 }
 
 okm () {
-  pro
-  cd backend/tools
-  git pull --all
-  open -a ~/Applications/Chrome\ Apps.localized/Kube\ MCE.app & bin/kube mce
+  pro;
+  cd work/backend/tools;
+  git pull --all;
+  open -a ~/Applications/Chrome\ Apps.localized/Kube\ MCE.app;
+  bin/kube mce
 }
+
+alias g="gcloud"
+
+function gssh() {
+  PROJECT=$1
+  INSTANCE=$2
+  shift; shift;
+  g compute ssh $INSTANCE --project $PROJECT --tunnel-through-iap $@
+}
+
+alias gst='gssh splytech-tooling'
+alias gsds='gssh splytech-dev-system'
+alias gsdw='gssh splytech-dev-widget'
+alias gsdc='gssh splytech-dev-core'
+alias gsdo='gssh splytech-dev-operations'
+alias gsps='gssh splytech-prod-system'
+alias gspw='gssh splytech-prod-widget'
+alias gspc='gssh splytech-prod-core'
+alias gspo='gssh splytech-prod-operations'

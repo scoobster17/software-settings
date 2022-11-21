@@ -146,6 +146,14 @@ if [ -f $FUNCTIONS_PATH ]; then
     source $FUNCTIONS_PATH
 fi
 
+# WORK SPECIFIC
+WORK_SCRIPTS_PATH=~/.work-scripts.bash
+if [ ! -f $WORK_SCRIPTS_PATH ]; then
+    touch $WORK_SCRIPTS_PATH
+else
+    source $WORK_SCRIPTS_PATH
+fi
+
 # TOOLS, E.G. NVM, GCLOUD
 TOOLS_SETUP_DIR_PATH=$PROJECTS_DIR"/personal/software-settings/bash/tools-setup"
 if [ -f "${TOOLS_SETUP_DIR_PATH}/.google-cloud-sdk.bash" ]; then
