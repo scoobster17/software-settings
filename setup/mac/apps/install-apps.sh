@@ -62,6 +62,7 @@ conditional_brew_install spotify
 conditional_brew_install studio-3t
 conditional_brew_install toggl
 conditional_brew_install veracrypt
+conditional_brew_install visual-studio-code
 conditional_brew_install webstorm
 conditional_brew_install whatsapp
 conditional_brew_install zoom
