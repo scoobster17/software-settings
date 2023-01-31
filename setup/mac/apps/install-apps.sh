@@ -41,34 +41,30 @@ conditional_brew_install terraform
 conditional_brew_install tmux
 
 # apps
-conditional_brew_install caffeine
-conditional_brew_install charles
 conditional_brew_install clickup
-conditional_brew_install db-browser-for-sqlite
-conditional_brew_install discord
+#conditional_brew_install db-browser-for-sqlite
+#conditional_brew_install discord
 conditional_brew_install expressvpn
 conditional_brew_install figma
 conditional_brew_install firefox
 conditional_brew_install google-cloud-sdk
-conditional_brew_install messenger
+#conditional_brew_install messenger
 conditional_brew_install microsoft-excel
 conditional_brew_install microsoft-word
 conditional_brew_install ngrok
 conditional_brew_install omnidisksweeper
 conditional_brew_install openemu
-conditional_brew_install paw
+#conditional_brew_install paw
 conditional_brew_install plex
 conditional_brew_install plex-media-server
 conditional_brew_install postman
-conditional_brew_install simplenote
-conditional_brew_install skype
 conditional_brew_install spotify
 conditional_brew_install studio-3t
 conditional_brew_install toggl
 conditional_brew_install veracrypt
 conditional_brew_install webstorm
 conditional_brew_install whatsapp
-conditional_brew_install zoomus
+conditional_brew_install zoom
 
 # mac app store cli
 is_brew_app_installed mas || brew install mas;
