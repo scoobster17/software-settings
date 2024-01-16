@@ -28,3 +28,9 @@
 	autoSetupRemote = true
 [init]
 	defaultBranch = main
+
+# TODO: find a way to utilise $PROJECTS_DIR env var here. May need to use Git config CLI to do this
+# [includeIf "gitdir:$PROJECTS_DIR"/work/"]
+#	 path = $PROJECTS_DIR"/work/.gitconfig"
+[includeIf "gitdir:~/Documents/projects/work/"]
+    path = ~/Documents/projects/work/.gitconfig
