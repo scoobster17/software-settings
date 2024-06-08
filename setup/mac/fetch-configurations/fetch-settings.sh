@@ -2,7 +2,7 @@
 
 DIR=$( dirname "$BASH_SOURCE" | sed "s:/./:/:" )
 
-source "$DIR/create-projects-directory.sh"
+source "$DIR/create-repos-directories.sh"
 
 if [ ! -d $PERSONAL_REPOS_DIR"/software-settings" ]; then
   cd $PERSONAL_REPOS_DIR
