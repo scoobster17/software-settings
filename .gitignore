@@ -7,3 +7,6 @@
 
 # MacOS
 **/.DS_Store
+
+# SSH
+.ssh/work.config
