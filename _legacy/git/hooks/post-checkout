@@ -1,4 +1,0 @@
-#!/bin/sh
-echo "\nRunning 'git fetch --all'\n"
-git fetch --all
-git status

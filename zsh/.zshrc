@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 
 echo "Setting up variables for .zshrc"
 
-source "$(greadlink -m ~/.zshrc | xargs dirname)/../setup/mac/fetch-configurations/configure-projects-directory.sh"
+source "$(greadlink -m ~/.zshrc | xargs dirname)/../setup/mac/fetch-configurations/configure-repos-directories.sh"
 
 # ZSH PLUGINS
 echo "Setting up plugins"
@@ -135,19 +135,19 @@ fi
 export GIT_PAGER=cat
 
 # VARIABLES
-VARIABLES_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.variables.bash"
+VARIABLES_PATH=$PERSONAL_REPOS_DIR"/software-settings/bash/.variables.bash"
 if [ -f $VARIABLES_PATH ]; then
     source $VARIABLES_PATH
 fi
 
 # ALIASES
-ALIASES_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.aliases.bash"
+ALIASES_PATH=$PERSONAL_REPOS_DIR"/software-settings/bash/.aliases.bash"
 if [ -f $ALIASES_PATH ]; then
     source $ALIASES_PATH
 fi
 
 # FUNCTIONS
-FUNCTIONS_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.functions.bash"
+FUNCTIONS_PATH=$PERSONAL_REPOS_DIR"/software-settings/bash/.functions.bash"
 if [ -f $FUNCTIONS_PATH ]; then
     source $FUNCTIONS_PATH
 fi
@@ -161,7 +161,7 @@ else
 fi
 
 # TOOLS, E.G. NVM, GCLOUD
-TOOLS_SETUP_DIR_PATH=$PROJECTS_DIR"/personal/software-settings/bash/tools-setup"
+TOOLS_SETUP_DIR_PATH=$PERSONAL_REPOS_DIR"/software-settings/bash/tools-setup"
 if [ -f "${TOOLS_SETUP_DIR_PATH}/.google-cloud-sdk.bash" ]; then
     source "${TOOLS_SETUP_DIR_PATH}/.google-cloud-sdk.bash"
 fi

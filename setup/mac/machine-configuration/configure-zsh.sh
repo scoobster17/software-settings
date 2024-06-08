@@ -7,5 +7,5 @@ sh $OH_MY_ZSH_PATH
 rm $OH_MY_ZSH_PATH
 
 rm ~/.zshrc
-ln -s $PROJECTS_DIR"/personal/software-settings/zsh/.zshrc" ~/.zshrc
+ln -s $PERSONAL_REPOS_DIR"/software-settings/zsh/.zshrc" ~/.zshrc
 source ~/.zshrc

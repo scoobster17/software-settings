@@ -4,9 +4,9 @@ DIR=$( dirname "$BASH_SOURCE" | sed "s:/./:/:" )
 
 source "$DIR/create-projects-directory.sh"
 
-if [ ! -d "$PROJECTS_DIR/personal/software-settings" ]; then
-  cd "$PROJECTS_DIR/personal"
-  echo "Navigated to $PROJECTS_DIR/personal"
+if [ ! -d $PERSONAL_REPOS_DIR"/software-settings" ]; then
+  cd $PERSONAL_REPOS_DIR
+  echo "Navigated to "$PERSONAL_REPOS_DIR
 
   echo -e "\n\nMAKE SURE YOU TYPE \"yes\" IF ASKED IF WANT TO CONTINUE. DO NOT PRESS ENTER!!!\n\n"
 
@@ -17,5 +17,5 @@ fi
 
 # auth cleanup
 trash ~/.ssh/config
-ln -s $PROJECTS_DIR/personal/software-settings/.ssh/config ~/.ssh/config
+ln -s $PERSONAL_REPOS_DIR"/software-settings/.ssh/config" ~/.ssh/config
 echo "~/.ssh/config replaced with settings symlink"

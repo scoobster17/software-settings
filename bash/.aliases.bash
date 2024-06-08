@@ -2,11 +2,13 @@
 
 echo "Setting custom aliases"
 
-#-- PROJECTS --#
-if [ -n $PROJECTS_DIR ]; then
-    alias pro="cd ${PROJECTS_DIR}"
+#-- REPOS --#
+if [ -n $PERSONAL_REPOS_DIR ]; then
+    alias pro="cd ${PERSONAL_REPOS_DIR}"
 fi
-
+if [ -n $WORK_REPOS_DIR ]; then
+    alias wro="cd ${WORK_REPOS_DIR}"
+fi
 
 #-- TRAVERSING & FILE/FOLDER OPERATIONS --#
 #alias ..="cd ../"
@@ -30,11 +32,6 @@ alias obr=$MYEDITOR" ~/.bashrc"         # Open .bashrc
 alias oba=$MYEDITOR" ~/.aliases.bash"   # Open bash aliases
 alias obl=$MYEDITOR" ~/.bashlocal"      # Open .bashlocal
 alias obh=$MYEDITOR" ~/.bash_history"   # Open bash history
-
-#-- FISH --#
-alias rf="source ~/.config/fish/config.fish"
-alias ofc=$MYEDITOR" ~/.config/fish/config.fish"
-alias ofh=$MYEDITOR" ~/.local/share/fish/fish_history"
 
 #-- ZSH --#
 alias rz="source ~/.zshrc"

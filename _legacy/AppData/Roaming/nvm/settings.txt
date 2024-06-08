@@ -1,2 +1,0 @@
-root: C:\Users\PHILGI~1\AppData\Roaming\nvm
-path: C:\PROGRA~1\nodejs
