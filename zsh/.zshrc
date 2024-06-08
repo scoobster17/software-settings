@@ -134,6 +134,12 @@ fi
 # for disabling git pager for all commands
 export GIT_PAGER=cat
 
+# VARIABLES
+VARIABLES_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.variables.bash"
+if [ -f $VARIABLES_PATH ]; then
+    source $VARIABLES_PATH
+fi
+
 # ALIASES
 ALIASES_PATH=$PROJECTS_DIR"/personal/software-settings/bash/.aliases.bash"
 if [ -f $ALIASES_PATH ]; then

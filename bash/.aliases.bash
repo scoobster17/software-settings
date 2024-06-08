@@ -43,16 +43,12 @@ alias ozh=$MYEDITOR" ~/.zsh_history"
 
 #-- NPM --#
 alias gnm="npm ls -g --depth 0"         # List npm modules installed globally
-alias gnp="gnm"
-alias npmgm="gnm"
-alias npmgp="gnm"
 alias rnm="rm -rf ./node_modules/"      # Remove node modules
 alias dnm="rnm"
-alias nrd="npm run start:dev"
 
 #-- NGROK --#
-alias ong=$MYEDITOR" ~/.ngrok2/ngrok.yml"
-alias ongi="open http://127.0.0.1:4040/inspect/http"
+# alias ong=$MYEDITOR" ~/.ngrok2/ngrok.yml"
+# alias ongi="open http://127.0.0.1:4040/inspect/http"
 
 #-- NGINX --#
 alias onx=$MYEDITOR" /usr/local/etc/nginx/nginx.conf"
