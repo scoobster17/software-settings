@@ -152,12 +152,12 @@ if [ -f $FUNCTIONS_PATH ]; then
     source $FUNCTIONS_PATH
 fi
 
-# WORK SPECIFIC
-WORK_SCRIPTS_PATH=~/.work-scripts.bash
-if [ ! -f $WORK_SCRIPTS_PATH ]; then
-    touch $WORK_SCRIPTS_PATH
+# DEVICE SPECIFIC
+DEVICE_SPECIFIC_SCRIPTS_PATH=~/.device-specific-scripts.bash
+if [ ! -f $DEVICE_SPECIFIC_SCRIPTS_PATH ]; then
+    touch $DEVICE_SPECIFIC_SCRIPTS_PATH
 else
-    source $WORK_SCRIPTS_PATH
+    source $DEVICE_SPECIFIC_SCRIPTS_PATH
 fi
 
 # TOOLS, E.G. NVM, GCLOUD
