@@ -23,7 +23,16 @@ alias use-zsh="chsh -s /bin/zsh"
 #-- EDITOR --#
 alias subl="~/bin/subl"
 alias ws="webstorm"                     # shortcut for webstorm (/usr/local/bin/webstorm)
-export MYEDITOR="subl"
+alias vscode="code"
+
+if [ -n $MYEDITOR ]; then
+    export MYEDITOR="subl"
+fi
+
+# TODO: fix these not working (following aliases take initial MYEDITOR var regardless of these aliases)
+alias use-subl="MYEDITOR='subl'"
+alias use-ws="MYEDITOR='ws'"
+alias use-vscode="MYEDITOR='vscode'"
 
 #-- BASH --#
 alias rb="source ~/.bash_profile"       # Reload bash profile
