@@ -16,7 +16,6 @@ alias la="ls -la"
 #-- SHELL --#
 alias which-shell="echo "$0
 alias use-bash="chsh -s /bin/bash"
-alias use-fish="chsh -s /usr/local/bin/fish"
 alias use-zsh="chsh -s /bin/zsh"
 
 #-- EDITOR --#
