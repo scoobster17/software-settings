@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 
 echo "Setting up variables for .zshrc"
 
-source "$(greadlink -m ~/.zshrc | xargs dirname)/../setup/mac/fetch-configurations/configure-repos-directories.sh"
+source "$(greadlink -m ~/.zshrc | xargs dirname)/../os-specific/mac/default-setup/fetch-configurations/configure-repos-directories.sh"
 
 # ZSH PLUGINS
 echo "Setting up plugins"
