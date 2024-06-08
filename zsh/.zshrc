@@ -168,5 +168,8 @@ fi
 if [ -f "${TOOLS_SETUP_DIR_PATH}/.nvm.bash" ]; then
     source "${TOOLS_SETUP_DIR_PATH}/.nvm.bash"
 fi
+if [ -f "${TOOLS_SETUP_DIR_PATH}/.sdkman.sh" ]; then
+    source "${TOOLS_SETUP_DIR_PATH}/.sdkman.sh"
+fi
 
 echo "\nFinished (re)loading .zshrc\n"

@@ -3,6 +3,7 @@
 SETUP_ROOT_DIR=$(pwd)/$(dirname "$0")
 
 source "$SETUP_ROOT_DIR/apps/install-brew.sh"
+source "$SETUP_ROOT_DIR/apps/install-java.sh"
 source "$SETUP_ROOT_DIR/apps/install-apps.sh"
 
 source "$SETUP_ROOT_DIR/fetch-configurations/authenticate-git.sh"
