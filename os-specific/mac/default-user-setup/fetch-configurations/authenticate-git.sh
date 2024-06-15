@@ -26,6 +26,8 @@ if [ ! -f ~/.ssh/github_ed25519_personal ]; then
   fi
 fi
 
-touch ~/.ssh/config
-chmod 600 ~/.ssh/config
-echo -e "Host github.com\n  IdentityFile ~/.ssh/github_ed25519_personal" >> ~/.ssh/config
+if [ ! -L ~/.ssh/config ]; then
+  trash ~/.ssh/config
+  ln -s $PERSONAL_REPOS_DIR"/software-settings/.ssh/config" ~/.ssh/config
+  echo "~/.ssh/config replaced with settings symlink"
+fi

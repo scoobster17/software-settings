@@ -14,8 +14,3 @@ if [ ! -d $PERSONAL_REPOS_DIR"/software-settings" ]; then
 else
   echo "Settings already fetched"
 fi
-
-# auth cleanup
-trash ~/.ssh/config
-ln -s $PERSONAL_REPOS_DIR"/software-settings/.ssh/config" ~/.ssh/config
-echo "~/.ssh/config replaced with settings symlink"
