@@ -13,7 +13,7 @@ curl \
 ## Running Setup Scripts
 ```
 DIR=$(pwd) \
-  && cd ~/Desktop/software-settings-main/setup/mac \
+  && cd ~/Desktop/software-settings-main/os-specific/mac/default-user-setup \
   && bash ./index.sh \
   && cd $DIR
 ```
